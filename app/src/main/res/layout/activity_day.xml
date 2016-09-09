@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/day_rela"
+        style="@style/top_banner_two" >
+
+        <LinearLayout
+            android:id="@+id/day_back_linear"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_back_t" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addto_title"
+            style="@style/top_banner_center"
+            android:text="选择日期"
+            android:textColor="#857751" />
+        
+        <RelativeLayout
+            android:id="@+id/rl_save"
+            style="@style/top_banner_right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="保存"
+                android:textColor="@color/dialog_item_text_red"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/day_linear_days"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_rela"
+        android:layout_marginLeft="1dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/dialog_button_photo"
+        style="@style/dialog_item_top"
+        android:text="自拍头像"
+        android:textColor="@color/dialog_item_text_red" />
+
+    <View style="@style/dialog_item_view" />
+
+    <Button
+        android:id="@+id/dialog_button_album"
+        style="@style/dialog_item_bottom"
+        android:text="本地照片" />
+
+    <Button
+        android:id="@+id/dialog_button_cancel"
+        style="@style/dialog_item_canel"
+        android:text="取消" />
+
+</LinearLayout>

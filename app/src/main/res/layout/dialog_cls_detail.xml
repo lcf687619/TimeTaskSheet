@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_set_item"
+    android:orientation="vertical" >
+
+    <!-- 详情 -->
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sch_meu_margin_leftright"
+            android:layout_marginRight="@dimen/sch_meu_margin_leftright"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_beforetime"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/timebefore_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1小时前"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/detail_year_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="12-25"
+                    android:textSize="@dimen/dialog_size" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/detail_time_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15:20"
+                        android:textSize="@dimen/dialog_size" />
+
+                    <TextView
+                        android:id="@+id/detail_tv_shun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="顺"
+                        android:textColor="@color/mingtian_color"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="周三 "
+                    android:textSize="@dimen/dialog_size" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/detail_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6dp"
+                        android:paddingBottom="25dp"
+                        android:text=""
+                        android:textColor="@color/richengcontext_txt"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:id="@+id/detail_edit_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="点击编辑"
+                            android:textColor="@color/gongkai_txt"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/detail_after"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/btn_tuihou"
+                android:gravity="center"
+                android:text="推后"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="@dimen/dialog_dibu_size" />
+
+            <TextView
+                android:id="@+id/detail_important"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="设为重要"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="@dimen/dialog_dibu_size" />
+
+            <TextView
+                android:id="@+id/detail_more"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/btn_gengduo1"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="@dimen/dialog_dibu_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 推后 -->
+
+    <LinearLayout
+        android:id="@+id/after"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/after_autopostone"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="自动顺延"
+                android:textColor="@color/sunday_txt" />
+
+            <View android:id="@+id/after_today_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_today"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推到今天" />
+
+            <View android:id="@+id/after_tommrow_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_tommrow"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推到明天" />
+
+            <View android:id="@+id/after_onehour_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_onehour"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推后一小时" />
+
+            <View android:id="@+id/after_oneday_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_oneday"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推后一天" />
+
+            <View android:id="@+id/after_oneweek_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_oneweek"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推后一周" />
+
+            <View android:id="@+id/after_onemonth_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_onemonth"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推后一个月" />
+
+            <View android:id="@+id/after_nextweekfirstday_view"
+                style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/after_nextweekfirstday"
+                style="@style/meu_after"
+                android:layout_weight="1"
+                android:text="推到下周一" />
+
+            <View style="@style/dialog_item_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 更多 -->
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/more_openstate"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="分类设置"
+                    android:textSize="@dimen/dialog_size" />
+
+                <TextView
+                    android:id="@+id/more_openstate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="(未分类)"
+                    android:textSize="@dimen/dialog_size" />
+            </LinearLayout>
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/more_zhuanfasjb"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转发时间表好友"
+                android:textColor="@color/sunday_txt"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/more_zhuanfawx"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="转发微信好友"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/more_setdaiban"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设为待办(今天+全天+顺延)"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/more_shitingmusic"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="试听铃声"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/more_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_zhuanfa"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="转发"
+            android:textColor="@color/mingtian_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xiangqing_guan" />
+    </LinearLayout>
+
+</RelativeLayout>

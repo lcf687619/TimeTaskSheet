@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/top_banner_three" >
+
+        <LinearLayout
+            android:id="@+id/showset_linear_back"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/button_back" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/top_banner_center"
+            android:text="@string/showset_title"
+            android:textColor="#000000" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E5E5E7" />
+    </RelativeLayout>
+	<View
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:background="#e9e9e9" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_bg_listview"
+        >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/showset_voice"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#505050"
+                    android:textSize="18sp" />
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    >
+                    <com.mission.schedule.switchbutton.SwitchButton
+		                android:id="@+id/date_cb"
+		                android:layout_width="100dp"
+		                android:layout_height="40dp"
+		                android:layout_gravity="center_vertical"
+		                android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_listview"
+        >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/showset_alarm"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#505050"
+                    android:textSize="18sp" />
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    >
+                    <com.mission.schedule.switchbutton.SwitchButton
+		                android:id="@+id/alarm_cb"
+		                android:layout_width="100dp"
+		                android:layout_height="40dp"
+		                android:layout_gravity="center_vertical"
+		                android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:id="@+id/mytext"
+        style="@style/top_center_textview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:text="用户登录" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/mytext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_loginactivity"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/logintext"
+                android:layout_gravity="center_vertical"
+                android:text="账号:" />
+
+            <EditText
+                android:id="@+id/edt_user"
+                android:layout_width="fill_parent"
+                style="@style/logintext"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入邮箱"
+                android:textColorHint="@color/hintcolor" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#f0eff5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/logintext"
+                android:layout_gravity="center_vertical"
+                android:text="密码:" />
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="fill_parent"
+                style="@style/logintext"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="请输入密码"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/hintcolor"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/lin" >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/tv_zhuce"
+            style="@style/logintext"
+            android:textColor="#D5D2D2"
+            android:text="免费注册" />
+        <View android:id="@+id/myview"
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="#D5D2D2"/>
+        <TextView
+            android:id="@+id/tv_wangji"
+            style="@style/logintext"
+            android:textColor="#D5D2D2"
+            android:text="忘记密码" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/re"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_btn_blue"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+	<Button android:id="@+id/lijishiyong_bt"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_below="@+id/btn_login"
+	    android:layout_marginTop="100dp"
+	    android:layout_marginLeft="40dp"
+	    android:layout_marginRight="40dp"
+	    android:background="@drawable/bg_lijishiyong"
+	    android:text="立即试用"
+	    android:textColor="#7DACA9"
+	    android:textSize="19sp"/>
+</RelativeLayout>

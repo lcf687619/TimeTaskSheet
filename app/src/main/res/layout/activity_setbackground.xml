@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_setbackground_head" />
+
+    <com.mission.schedule.utils.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/selectlocal_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:text="从相册中选取" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@mipmap/new_jiantou" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:text="推荐背景" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/background_item_height"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/nonebg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_noebackground"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/mypersontext"
+                                android:layout_centerInParent="true"
+                                android:text="无" />
+
+                            <CheckBox
+                                android:id="@+id/select0_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item1_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/a1" />
+
+                            <CheckBox
+                                android:id="@+id/select1_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item2_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/b1" />
+
+                            <CheckBox
+                                android:id="@+id/select2_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/item3_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/c1" />
+
+                            <CheckBox
+                                android:id="@+id/select3_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item4_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/d1" />
+
+                            <CheckBox
+                                android:id="@+id/select4_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item5_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/e1" />
+
+                            <CheckBox
+                                android:id="@+id/select5_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/item6_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/f1" />
+
+                            <CheckBox
+                                android:id="@+id/select6_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item7_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/g1" />
+
+                            <CheckBox
+                                android:id="@+id/select7_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/item8_bg_rl"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:src="@mipmap/h1" />
+
+                            <CheckBox
+                                android:id="@+id/select8_cb"
+                                style="@style/CustomCheckboxTheme"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/bg_color"/>
+        </LinearLayout>
+    </com.mission.schedule.utils.ReboundScrollView>
+
+</LinearLayout>

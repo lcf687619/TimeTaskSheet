@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/everyday_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="每天"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/workday_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="工作日"
+                android:textColor="@color/sunday_txt"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/everyweek_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="每周"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/everymonth_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="每月"
+                android:textSize="@dimen/dialog_size" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/everyyear_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="每年"
+                android:textSize="@dimen/dialog_size" />
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/birth_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="快速输入生日"
+                android:textSize="@dimen/dialog_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/cancle_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="@dimen/dialog_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/top_ll_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/time_back_lu" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/new_activity_myfound_sousuo_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/top_ll_right"
+            android:layout_toRightOf="@id/top_ll_back"
+            android:background="@drawable/new_shape_edittext_bg"
+            android:hint="请输入搜索内容"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/top_ll_right"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="12dp" >
+
+            <TextView
+                style="@style/image_style"
+                android:text="搜索"
+                android:textColor="#f64b30"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollview_new_fragment_sousuo_data_layout_all"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/new_fragment_sousuo_data_layout_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp" >
+
+                <LinearLayout
+                    android:id="@+id/new_fragment_sousuo_mylistviewview1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/new_fragment_sousuo_mylistviewview1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <com.mission.schedule.utils.ListViewForScrollView
+                        android:id="@+id/new_fragment_sousuo_mylistviewview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#00ffffff"
+                        android:dividerHeight="10dp"
+                        android:scrollbars="none" >
+                    </com.mission.schedule.utils.ListViewForScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/new_fragment_sousuo_mylistviewview2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/new_fragment_sousuo_mylistviewview2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <com.mission.schedule.utils.ListViewForScrollView
+                        android:id="@+id/new_fragment_sousuo_mylistviewview2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#00ffffff"
+                        android:dividerHeight="10dp"
+                        android:scrollbars="none" >
+                    </com.mission.schedule.utils.ListViewForScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/new_fragment_sousuo_kuaijie_sousuo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/container1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="10dp"
+                        android:text="您搜索过的"
+                        android:textColor="#aaaaaa"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/container1_delete_sousuo_jilu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="清除记录"
+                        android:textColor="#30a9a0"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.mission.schedule.widget.TagCloudLayout
+                    android:id="@+id/container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:lineSpacing="10dp"
+                    app:tagSpacing="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:text="大家都在搜索的"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+
+                <com.mission.schedule.widget.TagCloudLayout
+                    android:id="@+id/container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:lineSpacing="10dp"
+                    app:tagSpacing="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_fragment_sousuo_nodata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/new_icon_nodata" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="未搜索到您想要的数据！"
+                android:textColor="#aaaaaa"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

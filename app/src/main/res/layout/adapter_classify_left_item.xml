@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="我的好友"
+            android:paddingTop="15dp"
+            android:textColor="#A1A1A1"
+            android:layout_marginBottom="-3dp"
+            android:textSize="17sp" />
+        
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="(1/30)"
+            android:paddingBottom="12dp"
+            android:textColor="#A1A1A1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<include android:id="@+id/guoqiweijieshu_head"
+	    layout="@layout/activity_guoqiweijieshu_head"/>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/guoqiweijieshu_head"
+        android:layout_marginBottom="55dp"
+        android:background="@color/bg_color"
+        android:orientation="horizontal" >
+        <com.mission.schedule.swipexlistview.SwipeXListViewNoHead
+            android:id="@+id/myguoqiweijieshu_listview"
+            style="@style/swipeXListView_style"
+            sp:right_width="@dimen/sch_item_270" />
+    </LinearLayout>
+	<TextView android:id="@+id/piliang_tv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center"
+	    android:text="批量结束"
+	    android:textSize="20sp"
+	    android:textColor="#FDD0D9"
+	    android:background="#FF7575"/>
+</RelativeLayout>

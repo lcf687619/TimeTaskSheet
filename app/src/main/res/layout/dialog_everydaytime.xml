@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+     <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white" >
+
+        <com.mission.schedule.utils.PickerView
+            android:id="@+id/hour_pv"
+            android:layout_width="100dp"
+            android:layout_height="240dp" />
+
+        <TextView
+            android:id="@+id/hour_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/hour_pv"
+            android:text="时"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <com.mission.schedule.utils.PickerView
+            android:id="@+id/minute_pv"
+            android:layout_width="100dp"
+            android:layout_height="240dp"
+            android:layout_toRightOf="@id/hour_tv" />
+
+        <TextView
+            android:id="@+id/minute_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/minute_pv"
+            android:text="分"
+            android:textColor="#ffaa33"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </RelativeLayout> -->
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <com.mission.schedule.view.CycleWheelView
+            android:id="@+id/hour_cy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.mission.schedule.view.CycleWheelView>
+
+        <com.mission.schedule.view.CycleWheelView
+            android:id="@+id/min_cy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.mission.schedule.view.CycleWheelView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/after"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zhengjian_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:text="证件类" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/bank_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:text="银行卡" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/kajuan_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:text="卡劵类" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/baozhi_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:text="保质类" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/other_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:text="其他" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/cancle_tv"
+                style="@style/meu_after1"
+                android:layout_weight="1"
+                android:textColor="@color/sunday_txt"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

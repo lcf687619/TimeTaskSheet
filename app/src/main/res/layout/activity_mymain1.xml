@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.0" >
+
+            <fragment
+                android:id="@+id/fragment_MySchedule"
+                android:name="com.mission.schedule.fragment.MyScheduleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/fragment_MyRepeat"
+                android:name="com.mission.schedule.fragment.MyRepeatFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/fragment_MyFound"
+                android:name="com.mission.schedule.fragment.NewMyFoundFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <fragment
+                android:id="@+id/fragment_my"
+                android:name="com.mission.schedule.fragment.NewFriendsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="#e9e9e9"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dcdada" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_dibudaohang"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/main_botton_rl_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_schedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:text="@string/fragment_timetable"
+                            android:textColor="@color/text_dibudaohang_moren"
+                            android:textSize="@dimen/main_botton_txt_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/tv_schedule"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2dp"
+                            android:src="@mipmap/btn_richeng1" />
+
+                        <TextView
+                            android:id="@+id/tv_schedule_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/icon_shuzi1"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_botton_rl_repeat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_myrepeat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            android:text="@string/fragment_repeate"
+                            android:textColor="@color/text_dibudaohang_moren"
+                            android:textSize="@dimen/main_botton_txt_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/tv_myrepeat"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2dp"
+                            android:src="@mipmap/btn_chongfu2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_botton_rl_found"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_found"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            android:text="@string/fragment_found"
+                            android:textColor="@color/text_dibudaohang_moren"
+                            android:textSize="@dimen/main_botton_txt_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/tv_found"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2dp"
+                            android:src="@mipmap/btn_faxian2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_botton_rl_my"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/tv_my"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            android:text="@string/fragment_send"
+                            android:textColor="@color/text_dibudaohang_moren"
+                            android:textSize="@dimen/main_botton_txt_size" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/tv_my"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2dp"
+                            android:src="@mipmap/btn_haoyou2" />
+
+                        <TextView
+                            android:id="@+id/tv_my_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/icon_shuzi1"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

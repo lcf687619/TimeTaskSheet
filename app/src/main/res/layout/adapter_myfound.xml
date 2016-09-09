@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d8d8d8" />
+        
+        <TextView
+            android:id="@+id/found_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="已关注"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/unfound_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="待关注"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/addfocus_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myfragment_item_height"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="点击添加关注"
+            android:textSize="16sp"
+            android:background="@color/white" />
+
+        <RelativeLayout android:id="@+id/content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myfragment_item_height"
+            android:orientation="horizontal" >
+
+            <!-- com.lcf.timetasksheet.circleview.CircularImage -->
+
+            <com.mission.schedule.circleview.CircularImage
+                android:id="@+id/friend_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/friendname_tv"
+                style="@style/setpersontext"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/friend_img"
+                android:gravity="center_vertical"
+                android:text="裤裤" />
+
+            <ImageView
+                android:id="@+id/v_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/friendname_tv"
+                android:src="@mipmap/set_gongzong" />
+
+            <TextView
+                android:id="@+id/shuaxin_tv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="刷新"
+                android:textColor="@color/mingtian_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/focus_tv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/mingtian_color"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--
+         <LinearLayout
+        android:layout_width="@dimen/myfragment_item_120"
+        android:layout_height="@dimen/myfragment_item_height"
+        android:orientation="vertical" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/delete_ll"
+        android:layout_width="@dimen/friends_item_80"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ff5959"
+            android:gravity="center"
+            android:text="取消关注"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#ff5959"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

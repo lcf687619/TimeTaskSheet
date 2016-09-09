@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <include android:id="@+id/head" 
+        layout="@layout/fragment_myfriend_head" />
+    
+    <RelativeLayout android:id="@+id/add_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_below="@id/head">
+        <TextView android:id="@+id/add_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/view"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="点击添加好友"
+            android:textColor="@color/mingtian_color"
+            android:textSize="19sp"/>
+        <View android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:gravity="center"
+            android:text="可以给TA安排提醒或日程"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <com.mission.schedule.utils.PullToRefreshViewNoFooter
+        android:id="@+id/myfriend_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:orientation="vertical">
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/friends_lv"
+            style="@style/swipeXListView_style"/>
+    </com.mission.schedule.utils.PullToRefreshViewNoFooter>
+
+</RelativeLayout>

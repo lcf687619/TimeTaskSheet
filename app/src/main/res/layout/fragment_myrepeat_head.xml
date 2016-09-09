@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/my_repeat_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/top_ll_left"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_gengduo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myschedule_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/myschedule_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timerepeat_title"
+                android:textColor="@color/wodericheng_biaoti"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_ll_right"
+            style="@style/top_banner_right" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_jia" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+</LinearLayout>    

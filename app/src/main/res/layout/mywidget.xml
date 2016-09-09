@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:initialLayout="@layout/widget_layout"
+    android:minHeight="294dp"
+    android:minWidth="294dp"
+    android:previewImage="@mipmap/ic_launcher"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" 
+    android:configure="com.mission.schedule.activity.ConfiguresActivity">
+    
+</appwidget-provider>  

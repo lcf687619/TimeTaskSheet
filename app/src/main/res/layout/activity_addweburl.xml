@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/activity_basehead"/>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="30dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weburl"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textSize="17sp"/>
+        <EditText 
+            android:id="@+id/weburl_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/new_detail_h"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="top"
+            android:background="@null"/>
+        <View android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color"/>
+    </LinearLayout>
+    
+</LinearLayout>    

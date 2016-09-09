@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <include android:id="@+id/head"
+        layout="@layout/activity_personmessage_head"/>
+    <ImageView android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/head"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/logo3"/>
+	<TextView android:id="@+id/text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_below="@id/image"
+	    android:layout_marginTop="30dp"
+	    android:text="时间表App"
+	    android:textColor="@color/gongkai_txt"
+	    android:textSize="18sp"/>
+	<TextView android:id="@+id/text1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_below="@id/text"
+	    android:layout_marginTop="10dp"
+	    android:text="微信号  = TimeApp"
+	    android:textColor="@color/gongkai_txt"
+	    android:textSize="14sp"/>
+	<TextView android:id="@+id/text2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_below="@id/text1"
+	    android:layout_marginTop="50dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:lineSpacingExtra="10dp"
+	    android:text="您可以加微信号TimeApp或客服Q\n3098997562反馈意见，谢谢支持!"
+	    android:textSize="18sp"/>
+</RelativeLayout>

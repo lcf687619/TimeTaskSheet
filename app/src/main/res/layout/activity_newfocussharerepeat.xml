@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color" >
+
+    <com.mission.schedule.swipexlistview.SwipeXListViewNoHead
+        android:id="@+id/repeat_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_rl"
+        android:background="@color/bg_color"
+        android:divider="@null"
+        android:listSelector="@color/bg_color"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mingtian_color" >
+		<TextView  android:id="@+id/tv"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_marginTop="5dp"
+		    android:text="创建重复提醒"
+		    android:textColor="@color/white"
+		    android:textSize="12sp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:src="@mipmap/btn_addwhite" />
+    </RelativeLayout>
+
+</RelativeLayout>

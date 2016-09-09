@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemroot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_riliactivity"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="@color/xinjianricheng_riqi"
+            android:textSize="17sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/lunar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="初三"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="10sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dip"
+            android:text="0/1"
+            android:textColor="#fff"
+            android:textSize="6sp"
+            android:visibility="gone" >
+        </TextView>
+
+</LinearLayout>

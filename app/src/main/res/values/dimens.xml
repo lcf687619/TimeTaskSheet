@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="crop__bar_height">48dp</dimen>
+    <dimen name="padding_common">16dp</dimen>
+    <dimen name="base_padding">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_item_text_size">18sp</dimen>
+    <dimen name="dialog_item_canel_text_size">20sp</dimen>
+    <dimen name="dialog_item_height">45dp</dimen>
+    <dimen name="main_botton_txt_size">11sp</dimen>
+    <dimen name="item_height">70dp</dimen>
+    <dimen name="myfragment_item_height">60dp</dimen>
+    <dimen name="time_clock_top_height">40dp</dimen>
+    <dimen name="sideBar_text_size">15sp</dimen>
+    <dimen name="sch_item_height">80dp</dimen>
+
+    <!-- 主页item -->
+    <dimen name="sch_item_180">190dp</dimen>
+    <dimen name="sch_item_270">180dp</dimen>
+    <dimen name="friends_item_80">80dp</dimen>
+    <dimen name="friends_item_0">0dp</dimen>
+    <dimen name="myfragment_item_120">120dp</dimen>
+    <!-- 详情菜单 -->
+    <dimen name="dialog_size">17sp</dimen>
+    <dimen name="dialog_dibu_size">14sp</dimen>
+    <dimen name="sch_meu_margin_leftright">41dp</dimen>
+    <dimen name="meu_after_margin_w">7dp</dimen>
+    <dimen name="meu_after_margin_h">15dp</dimen>
+    <dimen name="meu_after_h">45dp</dimen>
+    <dimen name="meu_set_h">60dp</dimen>
+    <!-- 滑动菜单 -->
+    <dimen name="drag_min_distince">10dip</dimen>
+    <dimen name="correctWidth">30dip</dimen>
+    <dimen name="left_distince">220dip</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="shadow_width">30dp</dimen>
+    <!-- 新建 -->
+    <dimen name="new_detail_h">200dp</dimen>
+    <dimen name="new_detail_item_h">50dp</dimen>
+    <dimen name="new_detail_min">20sp</dimen>
+    <!-- 日程内容字体大小 -->
+    <dimen name="richengcontent_size">17sp</dimen>
+    <!-- 设置背景图片 -->
+    <dimen name="background_item_height">340dp</dimen>
+
+    <dimen name="left_menu_heigth">45dp</dimen>
+    <!-- 日程中时间字体大小 -->
+    <dimen name="sch_time">15sp</dimen>
+    <dimen name="sch_checkbox">40dp</dimen>
+    <!-- 签到界面字体 -->
+    <dimen name="qiandao_jieri">15sp</dimen>
+    <dimen name="qiandao_tiaoguo">13sp</dimen>
+    <dimen name="qiandao_qiandao">18sp</dimen>
+    <!-- 新建日程中字体大小 -->
+    <dimen name="newschtextsize">15sp</dimen>
+    <!-- 新注册登录 -->
+    <dimen name="phone_textsize">16sp</dimen>
+    <dimen name="resgin_textsize">14sp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xinjianricheng_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/top_banner_one"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/top_ll_back"
+            style="@style/top_banner_back" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/time_back_lu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView android:id="@+id/middle_tv"
+                style="@style/top_banner_center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+		<RelativeLayout
+            android:id="@+id/top_ll_right"
+            style="@style/top_banner_right" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_jia" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/save_ll_right"
+            style="@style/top_banner_right" >
+
+            <TextView android:id="@+id/right_tv"
+                style="@style/image_style"
+                android:gravity="center_horizontal"
+                android:text="@string/new_build_save"
+                android:textColor="@color/sunday_txt"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

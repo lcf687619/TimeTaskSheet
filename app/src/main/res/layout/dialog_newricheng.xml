@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/edit_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="编辑"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/tuihou_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推后"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/end_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设为结束"
+            android:textColor="@color/sunday_txt"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/zhuanfa_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="转发"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/addmysch_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="加入我的日程"
+            android:textSize="@dimen/dialog_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/cancle_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/dialog_size" />
+    </LinearLayout>
+    <!-- 推后 -->
+
+    <LinearLayout
+        android:id="@+id/after"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/after_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="自动顺延"
+            android:textColor="@color/sunday_txt"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/after_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推后一小时"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/after_3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推后一天"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/after_4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推后一周"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/after_5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推后一个月"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/after_6"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推到下周一"
+            android:textSize="@dimen/dialog_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/cancle1_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/dialog_size" />
+    </LinearLayout>
+
+</RelativeLayout>

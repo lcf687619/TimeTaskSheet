@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/selectphoto_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <TextView
+            android:id="@+id/clearphoto_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="清除图片"
+            android:textSize="@dimen/dialog_size" />
+
+        <View style="@style/dialog_item_view" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/cancle_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/dialog_size" />
+    </LinearLayout>
+
+</RelativeLayout>

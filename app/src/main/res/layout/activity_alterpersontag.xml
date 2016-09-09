@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_alteremail_head"/>
+
+    <EditText android:id="@+id/tag_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:hint="请输入您的签名"
+        android:paddingLeft="20dp"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:textColorHint="@color/hintcolor"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"/>
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_view"/>
+
+</LinearLayout>

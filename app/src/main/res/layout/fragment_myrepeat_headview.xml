@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/bg_color" >
+    <LinearLayout
+        android:id="@+id/up_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="下拉发现更多重复!"
+            android:gravity="center"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/up_show"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/white"
+        android:alpha="0"
+        android:text="向上滑动可隐藏!"
+        android:textColor="#BBBBBB"
+        android:textSize="14sp" />
+    
+    <TextView android:id="@+id/enddayweb_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/daoqiguanliri"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

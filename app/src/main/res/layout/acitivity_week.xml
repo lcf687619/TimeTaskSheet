@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rela_title"
+        style="@style/top_banner_two" >
+
+        <LinearLayout
+            android:id="@+id/week_back_linear"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_back_t" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/week_title"
+            style="@style/top_banner_center"
+            android:text="选择星期"
+            android:textColor="#857751" />
+
+        <TextView
+            android:id="@+id/week_ok"
+            style="@style/top_banner_right"
+            android:gravity="right|center_vertical"
+            android:text="OK"
+            android:textColor="@color/sunday_txt"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rela_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/week_one_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期一"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:id="@+id/week_two_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期二"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:id="@+id/week_three_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期三"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/preinstrall_time_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/week_four_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期四"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:id="@+id/week_five_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期五"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:id="@+id/week_six_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期六"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/preinstrall_time_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/week_day_rela"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期日"
+                    android:textColor="#A49A7F"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/preinstrall_time_line1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/preinstrall_time_line" />
+    </LinearLayout>
+
+</RelativeLayout>

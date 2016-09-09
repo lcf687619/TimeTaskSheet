@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rela_title"
+        style="@style/top_banner_two" >
+
+        <LinearLayout
+            android:id="@+id/week_back_linear"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_back_t" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/week_title"
+            style="@style/top_banner_center"
+            android:text="选择星期"
+            android:textColor="#857751" />
+
+        <!-- <TextView
+            android:id="@+id/week_ok"
+            style="@style/top_banner_right"
+            android:gravity="right|center_vertical"
+            android:text="OK"
+            android:textColor="@color/sunday_txt"
+            android:textSize="20sp" /> -->
+    </RelativeLayout>
+	
+    <com.mission.schedule.utils.LineGridView android:id="@+id/week_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:listSelector="@color/week_color"></com.mission.schedule.utils.LineGridView>
+</LinearLayout>

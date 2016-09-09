@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_set_item"
+    android:orientation="vertical" >
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:scrollbars="none">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/daojishitixing"
+                android:textSize="@dimen/richengcontent_size"
+                />
+            <View android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/week_color"/>
+            <com.mission.schedule.utils.LineGridView 
+                android:id="@+id/daojishi_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                >
+            </com.mission.schedule.utils.LineGridView>
+            <View android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/week_color"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:text="@string/xuanzechangyongyu"
+                android:textSize="@dimen/richengcontent_size"/>
+            <View android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/week_color"/>
+            <com.mission.schedule.utils.LineGridView 
+                android:id="@+id/selectchangyong_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:numColumns="3"
+                android:scrollbars="none">
+                
+            </com.mission.schedule.utils.LineGridView>
+            <View android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/week_color"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

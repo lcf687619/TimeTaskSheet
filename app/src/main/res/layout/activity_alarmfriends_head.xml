@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp" >
+
+        <LinearLayout
+            android:id="@+id/top_ll_back"
+            style="@style/top_banner_back" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/btn_back_t" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView android:id="@+id/friendsName_tv"
+                style="@style/top_banner_center"
+                android:text="裤裤飞了"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

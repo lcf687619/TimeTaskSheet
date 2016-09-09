@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_basehead" />
+
+    <com.mission.schedule.utils.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/title_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="标题"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxWidth="200dp"
+                    android:text="24节气"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/headphoto_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textSize="16sp" />
+
+                <com.mission.schedule.circleview.CircularImage
+                    android:id="@+id/headphoto_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+                </com.mission.schedule.circleview.CircularImage>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="背景"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/background_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/background_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp" />
+
+                <Button
+                    android:id="@+id/updatebackground_bt"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_settingnewfocus_background"
+                    android:gravity="center"
+                    android:text="点击更换背景"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="分享标题:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sharetitle_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/showrichengmodle_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="日程展示模式"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/showrichengmodle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxWidth="200dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/showrichengcontent_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="日程展示内容"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/showrichengcontent_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:maxWidth="200dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/bg_color" />
+        </LinearLayout>
+    </com.mission.schedule.utils.ReboundScrollView>
+
+</LinearLayout>

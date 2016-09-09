@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_personmessage_head" />
+
+    <com.mission.schedule.utils.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white" >
+			
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/bg_color" />
+            <!--
+         没有指定圆形ImageView属性时，默认没有外边圆颜色 
+
+    需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果 
+
+    <com.dxd.roundimageview.RoundImageView  
+
+        android:layout_width="100dp" 
+
+        android:layout_height="100dp" 
+
+        android:src="@drawable/img" 
+
+        /> 
+
+    border_outside_color 外部圆圈的颜色 
+
+    border_inside_color 内部部圆圈的颜色 
+
+    border_thickness 外圆和内圆的宽度 
+
+    <com.dxd.roundimageview.RoundImageView  
+
+        android:layout_width="100dp" 
+
+        android:layout_height="100dp" 
+
+        android:src="@drawable/img" 
+
+        imagecontrol:border_inside_color="#bc0978" 
+
+        imagecontrol:border_outside_color="#ba3456" 
+
+        imagecontrol:border_thickness="1dp" 
+
+        />
+            -->
+
+            <RelativeLayout
+                android:id="@+id/photo_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="个人头像"
+                    android:textSize="16sp" />
+
+                <com.mission.schedule.circleview.CircularImage
+                    android:id="@+id/image_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp" />
+
+                <ImageButton 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <RelativeLayout
+                android:id="@+id/nicheng_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:text="昵称:"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/nicheng_tv"
+                    style="@style/mypersontext"
+                    android:layout_width="240dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:hint="" />
+                <ImageButton 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+            <RelativeLayout
+                android:id="@+id/remark_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/remark"
+                    style="@style/mypersontext"
+                    android:text="个性签名:"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/remark_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/remark"
+                    android:layout_toLeftOf="@+id/ib"
+                    android:textSize="16sp"
+                    android:textColor="#515151"
+                    android:layout_marginRight="15dp" />
+                <ImageButton android:id="@+id/ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <RelativeLayout
+                android:id="@+id/telephone_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:text="手机:" />
+
+                <TextView
+                    android:id="@+id/userphone_tv"
+                    style="@style/mypersontext"
+                    android:layout_width="240dp"
+                    android:gravity="right"
+                    android:paddingRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:hint="" />
+                <ImageButton 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <RelativeLayout
+                android:id="@+id/email_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:text="邮箱:" />
+
+                <TextView
+                    android:id="@+id/useremail_tv"
+                    style="@style/mypersontext"
+                    android:layout_width="200dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:layout_marginRight="40dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />"
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:text="内部号:"
+                    android:layout_centerVertical="true"
+                    android:textColor="#9c9c9c" />
+
+                <TextView
+                    android:id="@+id/userID_tv"
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="240dp"
+                    android:gravity="right"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="40dp"
+                    android:textColor="#9c9c9c" />
+                <ImageButton 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+			<View android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:background="@color/bg_color"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <RelativeLayout
+                android:id="@+id/alterpassword_re"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/btn_jiantou" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/left_view" />
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/state_re"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp" >
+
+                <TextView
+                    style="@style/mypersontext"
+                    android:layout_centerVertical="true"
+                    android:text="谁可以看见" />
+
+                <TextView
+                    android:id="@+id/state_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:text="公开"
+                    android:textColor="#ff0000"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_jiantou" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#cbcbcb" />
+            -->
+        </LinearLayout>
+    </com.mission.schedule.utils.ReboundScrollView>
+
+</LinearLayout>

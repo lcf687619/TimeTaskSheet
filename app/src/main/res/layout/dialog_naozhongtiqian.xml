@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_set_item" >
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="闹钟提前时间"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/detail_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xiangqing_guan" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tixingcishu_tv"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:text="1"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:text="次提醒:"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/year_tv"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="2015-12-14"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="10:15"
+                android:textColor="@color/gongkai_txt" 
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tixing_ll"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tixingcishu_tv1"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:text="2"
+                android:textColor="@color/gongkai_txt" 
+                android:textSize="13sp"/>
+
+            <TextView
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:text="次提醒:"
+                android:textColor="@color/gongkai_txt" 
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/year_tv1"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="2015-12-14"
+                android:textColor="@color/gongkai_txt" 
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/time_tv1"
+                style="@style/addtasktxt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="10:15"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/before_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/re"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        android:layout_marginBottom="3dp" />
+
+</RelativeLayout>

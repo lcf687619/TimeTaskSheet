@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 顶部界面 -->
+
+    <RelativeLayout
+        android:id="@+id/user_upPic_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/share_title_back" >
+
+        <ImageButton
+            android:id="@+id/btnHeadBack"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/app_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择图片"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_ok"
+        android:layout_below="@+id/user_upPic_layout_top"
+        android:gravity="center"
+        android:horizontalSpacing="4dip"
+        android:verticalSpacing="4dip" 
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:padding="4dip"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/shape_btn_blue"
+        android:textSize="16sp"
+        android:text="完成" />
+
+</RelativeLayout>

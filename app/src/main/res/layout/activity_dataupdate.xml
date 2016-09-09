@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/a1">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="版本升级中"
+        android:textSize="16sp"
+        android:textColor="@color/mingtian_color"/>
+    
+        <com.mission.schedule.utils.MyProgressBar  
+           android:id="@+id/progressBar1"  
+           style="@style/ProgressBar_Mini"  
+           android:layout_width="match_parent"  
+           android:layout_height="wrap_content" 
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp" 
+           android:progress="0"  
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="200dp" />  
+           
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="数据升级中..."
+            android:textSize="16sp"
+            android:textColor="@color/endbackground"/>
+           
+</RelativeLayout>    
+

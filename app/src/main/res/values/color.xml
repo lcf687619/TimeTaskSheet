@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 插件透明度颜色 -->
+    <color name="viewfinder_mask">#B2000000</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="green">#7fdf2a</color>
+    <color name="gray">#4c4c4c</color>
+    <color name="light_white">#bfbfbf</color>
+    <color name="blue_50">#804a90e2</color>
+    <color name="widget_bg">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#089ccf</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightGreen">#edfce1</color>
+    <color name="lightGray">#f6f6f6</color>
+    <color name="darkGrey">#e1e1e1</color>
+    <color name="palePink">#fde5db</color>
+    <color name="lightBlue">#e4f1fd</color>
+    <color name="pink">#fddada</color>
+    <color name="title0">#30A9A0</color>
+    <color name="title1">#FF7575</color>
+    <color name="dialog_item_choose_color">#d6d6d6</color>
+    <color name="dialog_item_text_red">#ff7575</color>
+    <color name="dialog_item_text_color">#007aff</color>
+    <color name="bulid_text_color_time">#b8b8b8</color>
+    <color name="tv_selector_pressed">#a7a7a7</color>
+    <color name="black">#000000</color>
+     <color name="light_blue">#436EC5</color>
+    <color name="addto_text_color">#857751</color>
+    <!-- 导航栏底部字体颜色值 -->
+    <color name="background_dibudaohang">#fcfcfc</color>
+    <color name="text_dibudaohang">#37a69f</color>
+    <color name="text_dibudaohang_moren">#666666</color>
+    <!-- 我的日程颜色值 -->
+    <color name="wodericheng_biaoti">#151515</color>
+	<!-- 公开字体颜色 -->
+	<color name="gongkai_txt">#aaaaaa</color>
+	
+	<!-- 整体背景颜色值 -->
+	<color name="bg_color">#eceff6</color>
+	<!-- 明天颜色 -->
+	<color name="mingtian_color">#2ea9a4</color>
+	<!-- 新建日程背景颜色 -->
+	<color name="xinjianricheng_bg">#30a9a0</color>
+	<color name="xinjianricheng_dabeijing">#f8f8f8</color>
+	<color name="xinjianricheng_riqi">#555555</color>
+	<!-- 不是本月的字体颜色 -->
+	<color name="othermonth_txt">#d4d4d4</color>
+	<!-- 周六，周日字体颜色 -->
+	<color name="sunday_txt">#ff7676</color>
+	<!-- 日程内容字体颜色 -->
+	<color name="richengcontext_txt">#484848</color>
+	<color name="friendsduihua_bg">#f0f2f7</color>
+	<!-- 背景红色 -->
+	<color name="bg_red">#FA6A6A</color>
+	<!-- 绿色 -->
+	<color name="bg_green">#7CCAAA</color>
+	<!-- 横线背景 -->
+	<color name="bg_view">#d8d8d8</color>
+	<!-- 闹钟提醒红色时间 -->
+	<color name="bg_alarm_tixing">#ff2c2c</color>
+	<!-- 闹钟提醒灰色时间 -->
+	<color name="bg_alarm_tixingtime">#6d6d6d</color>
+	
+	<color name="week_color">#eddcb0</color>
+	 <!-- 日历 -->
+    <color name="Calendar_WeekBgColor">#EFE7DE</color>
+    <color name="Calendar_WeekFontColor">#8C8A8C</color>
+    <color name="Calendar_DayBgColor">#f9f4e6</color>
+    <color name="isHoliday_BgColor">#E0E0E0</color>
+    <color name="unPresentMonth_FontColor">#857751</color>
+    <color name="isPresentMonth_FontColor">#857751</color>
+    <color name="isToday_BgColor">#EBDCC1</color>
+    <color name="specialReminder">#FF0000</color>
+    <color name="lineColor">#e1c883</color>
+    <color name="commonReminder">#BDBAB5</color>
+    <!-- hint字体颜色 -->
+    <color name="hintcolor">#DAD9D9</color>
+    <color name="left_view">#D5D5D5</color>
+    
+    <color name="calendar_background">#cb9e41</color>
+    <color name="Text">#603b07</color>
+    <color name="selection">#E9E9E9</color>
+    <!-- 过期未结束背景 -->
+    <color name="endbackground">#e6f79045</color>
+    <color name="important_text_color">#AAAAAA</color>
+    <!-- 设为结束时的字体颜色 -->
+    <color name="endtextcolor">#7F7F7F</color>
+    <!-- 意见反馈颜色 -->
+   <color name="schtixing">#E9E5E9</color>
+   <!-- 过度界面背景颜色 -->
+   <color name="workdaybackcolor">#20c0b7</color>
+   <color name="Saturdaybackcolor">#df7926</color>
+   <color name="Sundaybackcolor">#fd6860</color>
+   <!-- 新建日程 -->
+   <color name="newschcontentcolor">#585858</color>
+   <color name="choosedate">#FAF8FA</color>
+   <!-- 设置中字体颜色 -->
+   <color name="setting_text_color">#515151</color>
+   <!-- 发现中日期颜色 -->
+   <color name="focus_date_color">#d0cece</color>
+   <!-- 发现中模式2内容颜色 -->
+   <color name="focus_moduletwo_content">#787f80</color>
+    <!--新注册登录界面颜色 -->
+    <color name="newresgin_background">#f0f2f7 </color>
+    <color name="newresgin_hintcolor">#c6c9cf</color>
+    <color name="newresgin_line_color">#ddddde</color>
+    <color name="newlogin_telephone_color">#FF737171</color>
+
+</resources>

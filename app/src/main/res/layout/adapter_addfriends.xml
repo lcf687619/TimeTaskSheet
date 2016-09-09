@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <com.mission.schedule.circleview.CircularImage
+            android:id="@+id/friend_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/friendname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/friend_img"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="裤裤"
+            android:textColor="#515151"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/v_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/friendname_tv"
+            android:src="@mipmap/set_gongzong" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/add_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:layout_weight="3"
+        android:gravity="right|center_vertical"
+        android:text="添加"
+        android:textColor="@color/mingtian_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:layout_weight="3"
+        android:gravity="right|center_vertical"
+        android:text="待确认"
+        android:textColor="@color/gongkai_txt"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

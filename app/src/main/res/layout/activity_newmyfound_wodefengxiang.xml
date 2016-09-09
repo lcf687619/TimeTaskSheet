@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:id="@+id/top_ll_back"
+                style="@style/top_banner_back" >
+
+                <ImageView
+                    style="@style/image_style"
+                    android:background="@mipmap/time_back_lu" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/focusName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/top_ll_right"
+                android:layout_toRightOf="@id/top_ll_back"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/top_ll_right"
+                style="@style/top_banner_right" >
+
+                <ImageView
+                    style="@style/image_style"
+                    android:src="@mipmap/btn_jia" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.mission.schedule.utils.PullToRefreshViewNoFooter
+            android:id="@+id/pull_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/friends_lv"
+                style="@style/swipeXListView_style_shouchang" />
+        </com.mission.schedule.utils.PullToRefreshViewNoFooter>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/day_rela"
+        style="@style/top_banner_two" >
+
+        <LinearLayout
+            android:id="@+id/day_back_linear"
+            style="@style/top_banner_left" >
+
+            <ImageView
+                style="@style/image_style"
+                android:src="@mipmap/btn_back_t" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addto_title"
+            style="@style/top_banner_center"
+            android:text="选择日期"
+            android:textColor="#857751" />
+        
+    </RelativeLayout>
+
+    <com.mission.schedule.utils.LineGridView
+        android:id="@+id/day_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:listSelector="@color/week_color" >
+    </com.mission.schedule.utils.LineGridView>
+
+</LinearLayout>

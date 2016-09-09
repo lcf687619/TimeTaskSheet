@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fragment_myfound_head" />
+
+    <!--
+         <com.mission.schedule.utils.PullToRefreshView
+        android:id="@+id/myfriend_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    -->
+
+    <com.mission.schedule.swipexlistview.SwipeXListViewNoHead
+        android:id="@+id/focus_lv"
+        style="@style/swipeXListViewForScrollView_style"
+        android:layout_height="match_parent" />
+
+    <!-- <TextView
+        android:id="@+id/unfound_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_color"
+        android:gravity="center_vertical"
+        android:text="待关注"
+        android:textSize="17sp" /> -->
+
+    <!-- <com.mission.schedule.swipexlistview.SwipeXListView
+        android:id="@+id/unfocus_lv"
+        style="@style/swipeXListViewForScrollView_style"
+        android:layout_marginTop="5dp" /> -->
+    <!-- </com.mission.schedule.utils.PullToRefreshView> -->
+
+</LinearLayout>

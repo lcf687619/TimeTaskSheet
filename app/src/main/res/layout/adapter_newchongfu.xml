@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/date_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_repeatricheng_mingtian"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="今天"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 />
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout 
+                android:id="@+id/context_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height">
+                <TextView
+                    android:id="@+id/nongli_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="农历"
+                    android:textColor="@color/mingtian_color"
+                    android:textSize="14sp"
+                    />
+				<TextView
+                    android:id="@+id/riqi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/nongli_tv"
+                    android:text="07-02"
+                    android:textColor="@color/mingtian_color"
+                    android:textSize="14sp"
+                     />
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/riqi_tv"
+                    android:layout_marginLeft="10dp"
+                    android:text="15:30"
+                    android:textColor="@color/mingtian_color"
+                    android:textSize="14sp"
+                     />
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_tv"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="打篮球"
+                    android:textColor="@color/richengcontext_txt"
+                    android:textSize="@dimen/richengcontent_size" />
+                
+                <TextView android:id="@+id/comename_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="来自  星星的眼泪"
+                    android:textSize="12sp"
+                    android:textColor="@color/gongkai_txt"/>
+                
+                <TextView
+                    android:id="@+id/personstate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:text="公开"
+                    android:textColor="@color/gongkai_txt"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/pasue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:text="公开"
+                    android:textColor="@color/gongkai_txt"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/delete_ll"
+        android:layout_width="@dimen/friends_item_80"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/friends_item_80"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/sunday_txt"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

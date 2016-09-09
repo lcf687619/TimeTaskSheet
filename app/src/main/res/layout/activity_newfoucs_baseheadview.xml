@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/top_ll_back"
+            style="@style/top_banner_back" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/time_back_lu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/focusName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/top_ll_back"
+            android:layout_toLeftOf="@id/top_ll_right"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/top_ll_right"
+            style="@style/top_banner_right"
+            android:focusable="true"
+            android:visibility="visible" >
+
+            <TextView android:id="@+id/top_ll_right_textview_text"
+                style="@style/image_style"
+                android:text="分享"
+                android:focusable="false"
+                android:textColor="@color/mingtian_color"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

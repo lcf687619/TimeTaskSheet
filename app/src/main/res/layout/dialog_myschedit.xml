@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_set_item"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/head_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <LinearLayout
+                android:id="@+id/save_ll"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="保存"
+                    android:textColor="@color/mingtian_color"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/head_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="新建"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/close_ll"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/xiangqing_guan" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/head_rl"
+            android:background="@color/hintcolor" />
+
+        <EditText
+            android:id="@+id/schcontent_et"
+            android:layout_width="fill_parent"
+            android:layout_height="235dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="请输入日程内容"
+            android:imeActionLabel="完成"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:textSize="17sp"
+            android:textColor="@color/newschcontentcolor"
+            android:textColorHint="@color/hintcolor" />
+
+        <TextView
+            android:id="@+id/paste_tv"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_paste"
+            android:gravity="center"
+            android:text="粘贴"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

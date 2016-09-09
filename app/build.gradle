@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'wangdiantong.keyset'
+            keyPassword '123456'
+            storeFile file('F:/androidkey/wangdiantong.keyset')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.mission.schedule"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 559
+        versionName "5.5.9"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "Native_Libs2"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+    lintOptions {
+        abortOnError false
+        disable 'InconsistentArrays', 'DefaultLocale', 'OldTargetApi', 'GradleOverrides', 'MissingTranslation', 'UnusedResources', 'GoogleAppIndexingWarning'
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    dexOptions {
+        preDexLibraries = false
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    compile project(':DragLibrary')
+    compile project(':Swipemenulistview')
+    compile project(':ViewPagerLibrary')
+    compile project(':RefreshLibrary')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.github.orhanobut:logger:1.12'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.githang:clipimageview:0.1'
+    compile files('libs/MobCommons-2016.0707.1708.jar')
+    compile files('libs/MobTools-2016.0707.1708.jar')
+    compile files('libs/ShareSDK-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.4.jar')
+//    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    compile files('libs/jpush-android-2.1.7.jar')
+}

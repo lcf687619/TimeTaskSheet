@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/dialog_button_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="@dimen/dialog_item_text_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="从相册中选取"
+        android:background="@null"
+        android:textColor="@color/dialog_item_text_red" />
+
+    <!-- <View style="@style/dialog_item_view" />
+
+    <Button
+        android:id="@+id/dialog_button_moren"
+        style="@style/dialog_item_bottom"
+        android:text="默认照片" /> -->
+     <View android:layout_width="match_parent"
+         android:layout_height="5dp"
+         android:background="@color/bg_view"/>   
+
+    <Button
+        android:id="@+id/dialog_button_cancel"
+          android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="@dimen/dialog_item_text_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@null"
+        android:textColor="@color/dialog_item_text_color"
+        android:text="取消" />
+
+</LinearLayout>

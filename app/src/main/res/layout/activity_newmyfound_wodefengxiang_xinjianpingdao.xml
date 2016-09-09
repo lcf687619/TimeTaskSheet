@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical" >
+    	<include layout="@layout/activity_newfoucs_baseheadview" />	 
+    	<LinearLayout
+    	    android:layout_marginTop="30dp"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="50dp"
+    	    android:background="@color/white"
+    	    android:orientation="horizontal">   
+    	    <TextView
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="match_parent"
+    	        android:text="标题"
+    	        android:gravity="center_vertical"
+    	        android:layout_marginLeft="20dp"
+    	        android:textSize="18sp"
+    	        android:paddingRight="20dp"
+    	        android:textColor="#000000"/>
+		    <EditText
+		        android:layout_weight="1"
+		        android:id="@+id/new_activity_myfound_wodefengxiang_xinjianpingdao_edittext"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:hint="请输入昵称"
+        		android:textColorHint="@color/hintcolor"
+        		android:background="@color/white"
+        		android:singleLine="true"
+        		android:inputType="text"
+		        android:layout_marginRight="20dp"/>
+	    </LinearLayout> 
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/top_banner_one" >
+
+        <LinearLayout
+            android:id="@+id/new_dtl_back"
+            style="@style/top_banner_back" >
+
+            <ImageView
+                style="@style/image_style"
+                android:background="@mipmap/app_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/myschedule_title"
+                style="@style/top_banner_center"
+                android:text="选择常用提醒" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0" />
+
+    <ListView
+        android:id="@+id/yingyong_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#D0D0D0" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+package com.mission.schedule.activity;
+
+import cn.jpush.android.api.JPushInterface;
+
+import com.mission.schedule.annotation.ViewResId;
+import com.mission.schedule.bean.UserInfo;
+import com.mission.schedule.constants.ShareFile;
+import com.mission.schedule.constants.URLConstants;
+import com.mission.schedule.utils.SharedPrefUtil;
+import com.mission.schedule.R;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class JoinFoundBangActivity extends BaseActivity implements OnClickListener{
+
+	@ViewResId(id = R.id.top_ll_left)
+	private LinearLayout top_ll_left;
+	@ViewResId(id = R.id.title_tv)
+	private TextView title_tv;
+	@ViewResId(id = R.id.webview)
+	private WebView webview;
+	
+	String path;
+	Context context;
+	SharedPrefUtil sharedPrefUtil = null;
+	String userid;
+	String userName;
+	String e_mail;
+	UserInfo info = null;
+	
+	
+	@Override
+	protected void setListener() {
+		top_ll_left.setOnClickListener(this);
+	}
+
+	@Override
+	protected void setContentView() {
+		setContentView(R.layout.activity_help);
+	}
+
+	@SuppressLint("SetJavaScriptEnabled")
+	@Override
+	protected void init(Bundle savedInstanceState) {
+		context = this;
+		sharedPrefUtil = new SharedPrefUtil(context, ShareFile.USERFILE);
+		userid = sharedPrefUtil.getString(context, ShareFile.USERFILE,
+				ShareFile.USERID, "0");
+		userName = sharedPrefUtil.getString(context, ShareFile.USERFILE,
+				ShareFile.USERNAME, "");
+		e_mail = sharedPrefUtil.getString(context, ShareFile.USERFILE,
+				ShareFile.USEREMAIL, "");
+		
+		info = new UserInfo();
+		info.userId = userid;
+		info.nickName = userName;
+		info.e_mail = e_mail;
+		info.token = JPushInterface.getUdid(getApplicationContext());
+		title_tv.setText("加入发现推荐榜");
+		path = URLConstants.申请加V+ userid;
+		// 启用支持javascript
+		WebSettings settings = webview.getSettings();
+		webview.getSettings().setDomStorageEnabled(true);
+		settings.setJavaScriptEnabled(true);
+//		webview.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+		webview.loadUrl(path);
+		webview.loadUrl("javascript:userInfo={"
+				+ "userId:'"+info.userId+"',"
+				+ "nickName:'"+info.nickName+"',"
+				+ "e_mail:'"+info.e_mail+"',"
+				+ "token:'"+info.token+"'}");
+		webview.setWebViewClient(new WebViewClient() {
+			@Override
+			public boolean shouldOverrideUrlLoading(WebView view, String url) {
+				// 返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
+				view.loadUrl(url);
+				// view.loadUrl(URLConstants.积分规则);
+				return true;
+			}
+		});
+	}
+
+	@Override
+	protected void setAdapter() {
+		
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.top_ll_left:
+			if (webview.canGoBack()) {
+				webview.goBack();
+			} else {
+				finish();
+			}
+			break;
+		default:
+			break;
+		}		
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {// 竖屏
+			if (webview.canGoBack()) {
+				webview.goBack();
+				  return true;    //已处理   
+			} else {
+				finish();
+			}
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+}

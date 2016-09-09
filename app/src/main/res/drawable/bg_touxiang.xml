@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 四个角半径 -->
+    
+    <corners android:topLeftRadius="50dp"
+        android:topRightRadius="50dp"
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"/>
+
+    <!-- 渐变 -->
+    
+    <!-- <gradient
+        android:angle="270"
+        android:centerColor="@android:color/white"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="@android:color/black"
+        android:startColor="#cc0000"
+        android:type="linear"
+        android:useLevel="false" /> -->
+ 
+    <padding
+        android:bottom="4dp"
+        android:left="10dp"
+        android:right="4dp"
+        android:top="10dp" />
+
+    <!-- 填充 -->
+
+    <solid android:color="#ffffff" />
+
+    <!-- 画笔 -->
+    <stroke
+        android:dashGap="0dp"
+        android:dashWidth="0dp"
+        android:width="1dp"
+        android:color="#ffffff" />
+
+</shape>

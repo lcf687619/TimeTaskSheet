@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+	<include android:id="@+id/head" 
+	    layout="@layout/activity_resginactivity_head"/>
+	
+        <LinearLayout android:id="@+id/lin"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/bg_loginactivity"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView 
+                    style="@style/logintext"
+                    android:layout_gravity="center_vertical"
+                    android:text="账号:" />
+
+                <EditText
+                    android:id="@+id/edt_user"
+                    android:layout_width="fill_parent"
+                    style="@style/logintext"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:hint="邮箱"
+                    android:textColorHint="@color/hintcolor" />
+            </LinearLayout>
+			<View android:layout_width="fill_parent"
+			    android:layout_height="0.1dp"
+			    android:background="#f0eff5"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/logintext"
+                    android:layout_gravity="center_vertical"
+                    android:text="密码:"/>
+
+                <EditText
+                    android:id="@+id/edt_pwd"
+                    android:layout_width="fill_parent"
+                    style="@style/logintext"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入密码"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hintcolor"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:layout_below="@id/lin"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_btn_blue"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+</RelativeLayout>

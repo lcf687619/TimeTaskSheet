@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:background="@color/bg_color" >
+
+    <include
+        android:id="@+id/yiqian_head"
+        layout="@layout/activity_yiqian_head" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/yiqian_head"
+        android:background="@color/left_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_sousuo" >
+
+        <EditText
+            android:id="@+id/sousuocontent_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="60dp"
+            android:background="@null"
+            android:hint="请输入关键字!"
+            android:textColorHint="@color/gongkai_txt"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/sousuo_iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_fangdajing" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tishi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="没有找到您需要的日程!"
+        android:textColor="@color/gongkai_txt"
+        android:textSize="16sp" />
+
+    <com.mission.schedule.swipexlistview.SwipeXListViewNoHead
+        android:id="@+id/myschedule_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tishi_tv"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:divider="@null" />
+
+</RelativeLayout>

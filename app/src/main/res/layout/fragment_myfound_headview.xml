@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/av_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_view" />
+        <TextView
+            android:id="@+id/found_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="已关注"
+            android:textColor="@color/gongkai_txt"
+            android:textSize="16sp" />
+       <!--  <TextView
+            android:id="@+id/addfocus_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="点击添加关注"
+            android:textSize="16sp"
+            android:background="@color/white" /> -->
+    </LinearLayout>
+
+
+</LinearLayout>

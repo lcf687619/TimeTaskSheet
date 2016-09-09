@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/myview"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_view" />
+        <!-- start -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@color/white"
+            android:minHeight="60dp"
+            android:orientation="horizontal" >
+
+            <com.mission.schedule.circleview.CircularImage
+                android:id="@+id/friendsImage_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/friendsName_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="美丽天空"
+                    android:textColor="#515151"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/bsqstate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对方请求添加你为好友"
+                    android:textColor="@color/gongkai_txt"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sqstate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等待对方处理你的请求"
+                    android:textColor="@color/gongkai_txt"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tianjia_bt"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:text="接受"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/tianjia1_bt"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:text="等待确认"
+                android:textColor="@color/mingtian_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- end -->
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="@dimen/item_height"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+
+                <TextView
+                    android:id="@+id/tv_finish"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="#55b192"
+                    android:text="忽略"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="#ff5959"
+                    android:text="忽略"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

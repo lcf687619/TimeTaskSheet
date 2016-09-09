@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.mission.schedule.circleview.CircularImage
+        android:id="@+id/new_adapter_myfound_wodeshouchang_list_item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logo128" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="105dp"      
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/new_adapter_myfound_wodeshouchang_list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:gravity="top|start"
+            android:text="重要节日"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/new_adapter_myfound_wodeshouchang_list_item_count"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="12-25 09:00 圣诞节"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="#999999"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"                 
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/new_adapter_myfound_wodeshouchang_list_item_dianjiliang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="浏览量： 52259"
+                android:textColor="#aaaaaa"
+                android:gravity="center_vertical|start"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/new_adapter_myfound_wodeshouchang_list_item_zhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"                     
+                android:text="已订阅"     
+                android:paddingTop="20dp"  
+                android:paddingBottom="10dp"   
+                android:paddingLeft="10dp"  
+                android:paddingRight="10dp" 
+                android:gravity="center_vertical|end"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

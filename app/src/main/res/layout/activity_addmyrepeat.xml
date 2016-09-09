@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xinjianricheng_dabeijing"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_addmyrepeat_head" />
+
+    <View
+        style="@style/dialog_item_view"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <com.mission.schedule.utils.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="每天"
+                android:textColor="@color/mingtian_color"
+                android:textSize="17sp" />
+
+            <View style="@style/dialog_item_view" />
+
+            <TextView
+                android:id="@+id/dateselect_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="06-30"
+                android:textColor="@color/gongkai_txt"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/line_view"
+                style="@style/dialog_item_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/new_detail_item_h"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/time_rl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/time_tv"
+                        style="@style/addtasktxt"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text=""
+                        android:textColor="@color/xinjianricheng_riqi" />
+
+                    <ImageView
+                        android:id="@+id/timeanniu_imag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/time_tv"
+                        android:src="@mipmap/icon_xiajiantou" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tixing_tv"
+                    style="@style/addtasktxt"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="准时提醒"
+                    android:textColor="@color/xinjianricheng_riqi" />
+
+                <LinearLayout
+                    android:id="@+id/lingsheng_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/addtasktxt"
+                        android:padding="1dp"
+                        android:text="铃声:"
+                        android:textColor="@color/xinjianricheng_riqi" />
+
+                    <TextView
+                        android:id="@+id/morenlingshen_tv"
+                        style="@style/addtasktxt"
+                        android:padding="1dp"
+                        android:text="完成任务"
+                        android:textColor="@color/xinjianricheng_riqi" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/xinjianricheng_dabeijing" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/xinjianricheng_dabeijing"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/addrepeatcontent_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="top|left"
+                    android:hint="提醒做什么?"
+                    android:minHeight="@dimen/new_detail_h"
+                    android:padding="15dp"
+                    android:textColor="#585858"
+                    android:textColorHint="@color/gongkai_txt"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/xinjianricheng_dabeijing" />
+
+                <TextView
+                    android:id="@+id/choosecontent_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/new_detail_item_h"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="附加信息"
+                    android:textColor="@color/gongkai_txt"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/xinjianricheng_dabeijing" />
+
+                <RelativeLayout
+                    android:id="@+id/zhuangtai_re"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/new_detail_item_h"
+                    android:background="@color/white" >
+
+                    <TextView
+                        style="@style/addtasktxt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="分类标签"
+                        android:textColor="@color/xinjianricheng_riqi" />
+
+                    <TextView
+                        android:id="@+id/state_tv"
+                        style="@style/addtasktxt"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="公开"
+                        android:textColor="@color/xinjianricheng_bg" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@mipmap/btn_jiantou" />
+                </RelativeLayout>
+
+                <View style="@style/dialog_item_view" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/new_detail_item_h"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="进入我的日程"
+                        android:textSize="17sp" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle_sch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/ios7_btn"
+                        android:checked="true"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <View style="@style/dialog_item_view" />
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/xinjianricheng_dabeijing"/>
+        </LinearLayout>
+    </com.mission.schedule.utils.ReboundScrollView>
+
+</LinearLayout>

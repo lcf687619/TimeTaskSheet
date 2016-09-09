@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/yiqian_head"
+        layout="@layout/activity_yiqian_head" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/yiqian_head"
+        android:background="@color/left_view" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/view"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/left_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <CheckBox
+                android:id="@+id/all_cb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@color/white"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部"
+                android:textColor="@color/endbackground"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/left_view" />
+
+        <RelativeLayout
+            android:id="@+id/right_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <CheckBox
+                android:id="@+id/noend_cb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@color/white" />
+
+            <TextView
+                android:id="@+id/noend_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="今后+未结束"
+                android:textColor="@color/endbackground"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll"
+        android:background="@color/left_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view1" >
+
+        <fragment
+            android:id="@+id/all_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.mission.schedule.fragment.TagAllSchFragment" />
+
+        <fragment
+            android:id="@+id/noend_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.mission.schedule.fragment.TagNoEndSchFragment" />
+    </RelativeLayout>
+
+</RelativeLayout>

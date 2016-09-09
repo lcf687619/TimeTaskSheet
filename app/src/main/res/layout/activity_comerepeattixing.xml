@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/activity_basehead" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_color" />
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.mission.schedule.swipexlistview.SwipeXListViewNoHead
+                android:id="@+id/chongfu_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color"
+                android:divider="@null"
+                android:listSelector="@color/bg_color"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

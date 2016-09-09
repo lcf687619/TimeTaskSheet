@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/impotent_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height" >
+		<TextView android:id="@+id/mytext"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/delete_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height" >
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55b192"
+            android:gravity="center"
+            android:text="设为结束"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff5959"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
